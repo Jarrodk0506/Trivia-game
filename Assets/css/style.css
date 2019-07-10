@@ -1,0 +1,60 @@
+body{
+
+}
+button{
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+}
+button:focus, button:active{
+    outline: none;
+    box-shadow: none;
+}
+.container-fluid{
+    width: 100%;
+    margin: 0 auto;
+ 
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 50px;
+    color: white;
+}
+.description{
+    margin-bottom: 50px;
+}
+h4{
+    text-align: center;
+    color: white;
+}
+.col{
+    margin: 7px;
+}
+p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+
+}
+#answer4{
+    margin-bottom: 50px;
+}
+#time{
+    margin-bottom: 30px;
+}
+#question{
+    margin-bottom: 30px;
+}
+.container{
+    position: relative;
+    width: 75%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: black;
+    padding: 0;
+    margin-top: 100px;
+    margin-bottom: 160px;
+}
