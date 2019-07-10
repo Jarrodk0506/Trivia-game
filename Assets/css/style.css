@@ -23,6 +23,7 @@ h1{
     color: white;
 }
 .description{
+    font-size: 30px;
     margin-bottom: 50px;
 }
 h4{
@@ -45,6 +46,7 @@ p{
     margin-bottom: 30px;
 }
 #question{
+    font-size: 45px;
     margin-bottom: 30px;
 }
 .container{
