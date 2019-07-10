@@ -3,8 +3,9 @@ $(document).ready(function () {
 var correct = 0;
 var incorrect = 0;
 var unanswered = 0;
-var timer = 30;
-var interval;
+var timer = 5;
+var timerOn = false;
+var timerId;
 
 var questions = {
     question1: [
@@ -49,13 +50,29 @@ var questions = {
     
 }
 
+function decrement(){
+    timer--;
+    $("#time").html("Time left: " + timer);
+    console.log(timer);
+    if(timer == 0){
+        stop();
+    }
+}
+
+function stop(){
+    clearInterval(timerId);
+}
+
+//start setTimer
+function setTimer(){
+    clearInterval(timerId);
+    timerId =  setInterval(decrement, 1000);
+}; // end setTimer
 
 
-
-
-$("#time").click(function () {
-    console.log("Test")
-    $(".description").addClass('d-none');
+//Start button
+$("#start").click(function () {       
+    $("#start").addClass('d-none');
     $("#question").removeClass('d-none');
     $("#answer1").removeClass('d-none');       //display first question
     $("#answer2").removeClass('d-none');
@@ -67,18 +84,18 @@ $("#time").click(function () {
     $("#answer2").html(questions.question1[2]);
     $("#answer3").html(questions.question1[3]);
     $("#answer4").html(questions.question1[4]);
-    
+    setTimer();
 });
 
-function questionOne(){
+// function questionOne(){
     
-    $("#time").html("Time left: " + timer);
-    $("#question").html(questions.question1[0]);
-    $("#answer1").html(questions.question1[1]);       //display first question
-    $("#answer2").html(questions.question1[2]);
-    $("#answer3").html(questions.question1[3]);
-    $("#answer4").html(questions.question1[4]);
-};
+//     $("#time").html("Time left: " + timer);
+//     $("#question").html(questions.question1[0]);
+//     $("#answer1").html(questions.question1[1]);       //display first question
+//     $("#answer2").html(questions.question1[2]);
+//     $("#answer3").html(questions.question1[3]);
+//     $("#answer4").html(questions.question1[4]);
+// };
 
 
 
