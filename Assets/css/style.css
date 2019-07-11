@@ -1,5 +1,5 @@
 body{
-    background-image: url("")
+    background-image: url("https://chumley.barstoolsports.com/wp-content/uploads/2018/11/09/Screen-Shot-2018-11-09-at-11.09.29-AM-1024x673.png")
 }
 button{
     background: none;
@@ -57,9 +57,10 @@ p{
 .container{
     position: relative;
     width: 75%;
-    height: auto;
+    height: 90%;
     box-sizing: border-box;
     margin: 0 auto;
+    opacity: .8;
     background-color: blue;
     padding: 0;
     margin-top: 100px;
