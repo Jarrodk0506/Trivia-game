@@ -1,1 +1,1 @@
-# Trivia-game
+This is a 90's Nickelodeon Cartoon themed 5 question trivia game. 
